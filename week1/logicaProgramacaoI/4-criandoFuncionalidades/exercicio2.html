@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+
+  <script>
+    /*É um código totalmente funcional, resolve o problema. O que precisaríamos alterar no código de Gilberto para conseguir o mesmo resultado, 
+    mas sem ter que chamar mais uma vez o pulaLinha? Veja que isso acarretou em quatro novas instruções em nosso programa!*/
+
+    // Resolução: editar parâmetro da função pulaLinha para que haja dois "<br>".
+
+    function pulaLinha() {
+
+      document.write("<br><br>");
+
+    }
+
+    var titulo = "Bem-vindo ao meu programa!";
+
+    document.write("<h1>" + titulo + "</h1>");
+
+    pulaLinha();
+    //pulaLinha();
+
+    document.write("Vocês não sabem o que tive que aprender para fazer isso!");
+
+    pulaLinha();
+    //pulaLinha();
+
+    document.write("Contudo, assistindo os vídeos e estudando ...");
+
+    pulaLinha();
+    //pulaLinha();
+
+    document.write("Eu vou mais longe!");
+
+    pulaLinha();
+    //pulaLinha();
+
+  </script>
+  
+</body>
+</html>

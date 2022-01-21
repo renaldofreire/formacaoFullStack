@@ -7,10 +7,18 @@
 <body>
   <script>
     
+    function pulaLinha() {
+      document.write("<br>");
+      document.write("<br>");
+    }
+    
     var year = 2020;
 
-    document.write("Flávio nasceu em " + (year - 1977) + "<br>");
-    document.write("Joaquim nasceu em " + (year - 1996) + "<br>");
+    document.write("Flávio nasceu em " + (year - 1977));
+    pulaLinha();
+
+    document.write("Joaquim nasceu em " + (year - 1996));
+    pulaLinha();
 
     year = 2021;
 

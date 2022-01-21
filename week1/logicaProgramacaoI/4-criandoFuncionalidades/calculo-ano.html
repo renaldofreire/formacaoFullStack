@@ -7,25 +7,33 @@
 <body>
   <script>
     
-    var year = 2020;
     // var puloLinha = "<br><br><br>";
 
-    function puloLinha() {
+    function puloLinha() { // não recebe parâmetro
 
+      document.write("<br>");
       document.write("<br>");
 
     }
 
-    document.write("Flávio nasceu em " + (year - 1977));
-    puloLinha();
+    function mostra(frase) { // recebe parâmetro
 
-    document.write("Joaquim nasceu em " + (year - 1996));
-    puloLinha();
-    puloLinha();
+      document.write(frase);
+      puloLinha();
+
+    }
+
+    var year = 2020;
+
+    mostra(); // nao possui valor, será undefined
+
+    mostra("Flávio nasceu em " + (year - 1977)); // Função se sobressai sobre o parâmetro
+
+    mostra("Joaquim nasceu em " + (year - 1996));
     
     year = 2021;
 
-    document.write("Barney nasceu em " + (year - 1976));
+    mostra("Barney nasceu em " + (year - 1976));
 
 </script>
   
