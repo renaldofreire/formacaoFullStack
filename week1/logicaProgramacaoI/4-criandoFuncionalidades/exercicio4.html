@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+
+  <script>
+    /*Em média, um casal tem filhos quando atinge a idade de 28 anos. Seguindo essa média, se os portugueses chegaram em 1500 no Brasil, então, a primeira geração de brasileiros surgiu em 1528, a segunda em 1556 e assim por diante. Desde 1500 até o ano atual, quantas gerações se passaram?*/
+
+
+    function pulaLinha() {
+
+      document.write("<br>");
+
+    }
+
+    function mostra(media) {
+
+      document.write(media);
+
+    }
+
+    var anoInicio = 1500;
+    var anoAtual = 2022;
+    var anosTotais = anoAtual - anoInicio;
+    var mediaAnos = anosTotais / 28;
+
+
+    mostra("<h3>Cálculo de gerações do Brasil</h3>")
+    pulaLinha();
+    mostra("O total de anos que se passaram até agora é de " + anosTotais + ".");
+    pulaLinha();
+    pulaLinha();
+    mostra("Portanto, a média de gerações é " + Math.round(mediaAnos) + ".")
+
+
+  </script>
+
+</body>
+</html>

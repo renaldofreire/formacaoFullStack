@@ -15,14 +15,19 @@
 
     }
 
-    function mostra(diferenca)
+    function mostra(diferenca) {
+
+      document.write(diferenca);
+      pulaLinha();
+
+    }
 
     var idadeMinha = 32;
-    var idadeFilha = 1;
+    var idadeFilha = 7;
     var idadeDiferenca = idadeMinha - idadeFilha;
 
-
-
+    mostra("<h3>Cálcula a diferença de idade.</h3>")
+    mostra("A diferença de idade é de " + idadeDiferenca + " anos.");
 
   </script>
   

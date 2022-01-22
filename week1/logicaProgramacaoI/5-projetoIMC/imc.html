@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cálculo IMC</title>
+</head>
+<body>
+
+  <script>
+
+    function pulaLinha() {
+      document.write("<br><br>")
+    }
+
+    function mostra(frase) {
+      document.write(frase);
+      pulaLinha();
+    }
+
+    function calculaImc(altura, peso) { // dois parâmetros
+      //var imc = peso / (altura * altura);
+      return peso / (altura * altura); // retorna na variável, mas antes realiza o cálculo
+    }
+
+    //var imcJoao = calculaImc(1.70, 94);
+    //var imcMario = calculaImc(1.75, 76);
+    //var imcTotal = imcJoao + imcMario;
+
+    // única linha:
+    var imcTotal = calculaImc(1.70, 94) + calculaImc(1.75, 76);
+
+    document.write("A soma dos IMC é " + imcTotal);
+
+
+  </script>
+  
+</body>
+</html>
