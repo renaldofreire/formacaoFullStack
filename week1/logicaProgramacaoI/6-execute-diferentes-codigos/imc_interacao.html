@@ -28,8 +28,23 @@
 
     var imc = calculaIMC(alturaInformada, pesoInformado);
 
+    mostra("Oi " + nome + "! O seu IMC totalizou " + imc)
 
-    document.write("O seu IMC atual é " + imc);
+    if(imc < 18.5) {
+      mostra("Você está abaixo da média recomendada.")
+    }
+    
+    if(imc > 35) {
+      mostra("Você está acima da média recomendada.")
+    }
+
+    if(imc >= 18.5 && imc <= 35) {
+        mostra("Seu IMC está ótimo!")
+    }
+
+    if(imc < 18.5) {
+
+    }
 
   </script>
   
