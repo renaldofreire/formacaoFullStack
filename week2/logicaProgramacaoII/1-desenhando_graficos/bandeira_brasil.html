@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bandeira do Brasil</title>
+  </head>
+  <body>
+
+    <canvas width="600" height="400"></canvas>
+
+    <script>
+
+      var tela = document.querySelector("canvas");
+      var pincel = tela.getContext("2d");
+
+      pincel.fillStyle = "yellow"; //triangulo top
+      pincel.beginPath();
+      pincel.moveTo(100,175);
+      pincel.lineTo(100, 350);
+      pincel.lineTo(275, 350);
+      pincel.fill();
+
+      pincel.fillStyle = "green"; //retangulo
+      //pincel.fillRect(0, 0, 600, 400);
+
+
+    </script>
+
+  </body>
+</html>
