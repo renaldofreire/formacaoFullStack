@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+  </head>
+  <body>
+
+    <canvas width="600" height="400"></canvas>
+
+    <script>
+
+      function desenhaQuadradoVerde() {
+
+        var tela = document.querySelector("canvas");
+        var pincel = tela.getContext("2d");
+
+        pincel.fillStyle = "green"; // quadrado 1
+        pincel.fillRect(0, 0, 50, 50); // coordenada x(top ---> right) e y(top ----> bottom)
+        pincel.fillStroke = "black"; // cor da borda
+        pincel.strokeRect(0, 0, 50, 50);
+
+      }
+
+      desenhaQuadradoVerde();
+      desenhaQuadradoVerde();
+      desenhaQuadradoVerde();
+      desenhaQuadradoVerde();
+      desenhaQuadradoVerde();
+      desenhaQuadradoVerde();
+
+    </script>
+
+  </body>
+</html>
