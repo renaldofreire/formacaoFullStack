@@ -10,24 +10,37 @@
 
     <script>
 
-      function desenhaQuadradoVerde() {
+      function desenhaQuadrado(x, y, cor, linha) {
 
         var tela = document.querySelector("canvas");
         var pincel = tela.getContext("2d");
 
-        pincel.fillStyle = "green"; // quadrado 1
-        pincel.fillRect(0, 0, 50, 50); // coordenada x(top ---> right) e y(top ----> bottom)
+        pincel.fillStyle = cor; // quadrado 1
+        pincel.fillRect(x, y, 50, 50); // coordenada x(top ---> right) e y(top ----> bottom)
         pincel.fillStroke = "black"; // cor da borda
-        pincel.strokeRect(0, 0, 50, 50);
+        pincel.strokeRect(x, y, 50, 50);
 
       }
 
-      desenhaQuadradoVerde();
-      desenhaQuadradoVerde();
-      desenhaQuadradoVerde();
-      desenhaQuadradoVerde();
-      desenhaQuadradoVerde();
-      desenhaQuadradoVerde();
+      /* parâmetros x y em ação:
+      desenhaQuadrado(0, 0, "green");
+      desenhaQuadrado(0, 50, "green");
+      desenhaQuadrado(0, 100, "green");*/
+
+
+      //DOIS TIPOS DE ESTRUTURA DE REPETIÇÃO PARA CONSEGUIR O MESMO RESULTADO
+
+      var x = 0;
+
+      while(x < 600) { //enquanto x menor q 600px, adicione +50
+        desenhaQuadrado(x, 0, "green");
+        x = x + 50;
+      }
+
+      /*for(var x = 0; x < 600; x = x + 50) {
+        //desenhaQuadrado(x, 0, "green");
+      }*/
+
 
     </script>
 
