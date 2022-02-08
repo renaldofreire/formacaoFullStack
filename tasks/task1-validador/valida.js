@@ -2,15 +2,11 @@
 function validaLogin() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
-    if (username == null || username == "") {
-        alert("Por favor, insira seu usuário.");
-        return false;
-    }
-    if (password == null || password == "") {
-        alert("Por favor, insira sua senha.")
-        return false;
-    }
 
-    //alert("Você está conectado.");
-    window.location.replace("home.html");
+    if (username && password) {
+        alert("Conectado. Você será redirecionado...");
+        window.location.replace("home.html");
+    } else {
+        alert("Por favor, insira seu usuário e senha.");
+    }
 }
