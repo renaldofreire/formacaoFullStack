@@ -10,14 +10,16 @@
   <body>
 
     <div>
-      <h1>Login</h1>
+      <h1>Admin Login</h1>
       <legend>
         <form id="form-login" >
           <input type="text" name="usuario" id="username" placeholder="Usuário" />
           <br><br>
           <input type="password" name="senha" id="password" placeholder="Senha" />
           <br><br>
-          <input type="button" value="Logar" id="submit" onclick="validaLogin();" />
+          <input type="button" value="Login" id="submit" onclick="verSenha();" />
+          <input type="checkbox" onclick="verSenha();" />
+          <strong>Mostrar Senha</strong>
         </form>
       </legend>
     </div>
