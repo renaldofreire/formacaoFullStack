@@ -108,17 +108,56 @@ form {
   margin: 40px 0; /*superior/inferior = 40px e dir/esq = 0*/
 }
 
-form label {
+form label, form legend {
   display: block;
   font-size: 20px;
   margin: 0 0 10px;
 }
 
-form input {
+.input-padrao {
   display: block;
   margin: 0 0 20px;
   padding: 10px 25px;
   width: 50%;
+}
+
+.checkbox {
+  margin: 20px 0px;
+}
+
+.send {
+  width: 30%;
+  padding: 15px 0;; /*15 cima e baixo e 0 para os lados*/
+  background: orange;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  /*transition: 0.5s background;*/ /*tempo de transicao no bg*/
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.send:hover {
+  background: darkorange;
+  transform: rotate(1deg) scale(1.1);
+}
+
+table {
+  margin: 20px 0 40px; /*cima - 20, lados - 0 e baixo 40*/
+}
+
+thead {
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+
+td, th {
+  border: 1px solid #000000;
+  padding: 8px 15px;
+  
 }
 
 /*recomenda este site: https://unicode-table.com*/
