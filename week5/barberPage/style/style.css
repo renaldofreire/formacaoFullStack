@@ -1,3 +1,8 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+}
+
 header {
   background: #BBBBBB;
   padding: 20px 0;
@@ -160,4 +165,51 @@ td, th {
   
 }
 
-/*recomenda este site: https://unicode-table.com*/
+/*CSS home*/
+.banner {
+  width: 100%;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 2em; /*dobro da fonte base*/
+  margin: 0 0 1em; /* 0 cima, 0 lados, 1 vez tamanho fonte base para baixo*/
+  clear: left;
+}
+
+.principal p {
+  margin: 0 0 1em; /* cima e lados = 0, baixo 1 vez tamanho proporcional da fonte*/
+}
+
+.principal strong {
+  font-weight: bold;
+}
+
+.principal em {
+  font-style: italic;
+}
+
+.utensilios {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0; /* 0 cima, 20 direita/baixo 0 esquerda */
+
+}
+
+.imagembeneficios {
+  width: 60%;
+}
+
+.mapa {
+  padding: 3em 0; /*cima baixo 3x tamanho proporcional fonte do site, 0 lados*/
+}
+
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+.video {
+  width: 560px;
+  margin: 1em auto;
+}
