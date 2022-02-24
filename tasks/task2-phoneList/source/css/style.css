@@ -1,0 +1,26 @@
+main {
+font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-weight: bold;
+	padding: 7px;
+	font-size: 16px;
+	position: center;
+
+}
+
+table {
+	width: 50%;
+}
+
+td, th {
+	/*text-align: left;*/
+	vertical-align: bottom;
+	border: 2px solid #DDDDDD;
+	padding: 7px;
+}
+
+tr:nth-child(even) {
+	background-color: #DDDDDD;
+}

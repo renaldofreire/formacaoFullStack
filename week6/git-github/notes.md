@@ -1,0 +1,49 @@
+## Algumas anotações criadas durante o andamento deste curso
+
+### Comandos
+- `git init` inicializar um repositório
+- criar pasta server e `git init --bare`: só irá salvar as modificações
+- `git remote` ver servidor externo
+- `git status` infos úteis
+- `git pull` pega dados do repositório remoto
+- `9fdc40a4be25559915e9ef2a74f51848a514c9d6` - exemplo de HASH de um commit
+- HEAD - local onde estamos no momento
+- BRANCH MASTER - branch principal
+- Arquivo `.gitignore`: inserir arquivos a serem ignorados pelo git
+- **`git log`**
+	- `git log --oneline` log resumido a uma linha
+	- `git log -p` log completo
+	- `git log --graph` log separando por linhas de desenvolvimento
+- **`git config`**
+	- `git config --local` configs apenas para repositório atual
+	-  `git config --global` configs para máquina
+	-  `git config --local user.name "Renaldo Freire"` mudando nome config local
+	-  `git config user.name` retorna qual o nome de usuário
+	-  `git config user.email` retorna qual o e-mail
+-  **`git branch`** - são meio que separações(galhos) no desenvolvimento
+	-  `git branch` lista branchs do projeto
+	-  `git branch titulo` cria novo branch chamado titulo 
+-  **`git checkout`**
+	-  `git checkout titulo` mudar para o branch titulo
+	-  `git checkout -b titulo` cria branch e já altera para ela (titulo)
+	-  `git checkout master` mudar para branch master
+	-  `git checkout -- index.html` desfazer alterações nao commitadas
+	-   **`git checkout`** **mudando entre verões**
+	-  `git checkout ea539b3` fui para versao hash ea539b3, ela está detached
+	-  `git checkout -b novo-branch`inicio novo-branch, onde posso fazer edições e atualizações merge/rebase no futuro 
+- **`git reset`**
+	- `git reset HEAD index.html` desfaz alterações para serem removidas ainda nao comittadas
+- **`git revert`**
+	- `git revert <hash commit>` desfaz commit
+- **`git merge`**
+	-  `git merge titulo` dentro da master, unifico com modificações da branch titulo\
+- **`git rebase`**
+	- `git rebase titulo`na master, unifica mudancas da branch titulo, mantendo o log separado
+- **`git push`**
+- **`git stash`** guardar alterações para depois
+- **`git diff`** mostra mudanças realizadas nao comitadas 
+	- `git log cbae3a2..765846b` - mostra alteraçõs do commit *cba* **até** *765*
+	- **`git tag`**
+	- `git tag -a v0.1.0 -m "Primeira versão do projeto"`
+	- `git tag -a v0.1.0` para criar uma tag no seu código
+	- `git push origin v0.1.0` para enviar esta tag para o GitHub

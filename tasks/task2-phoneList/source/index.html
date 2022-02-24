@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Phone List JS</title>
+  </head>
+  <body>
+
+    <main>
+
+      <h1>Lista Telefônica</h1>
+
+      <div class="wrapper">
+        <table id="dataTable">
+          <tr id="row1">
+            <th>Nome</th>
+            <th>Número</th>
+            <th>#</th>
+          </tr>
+          <tr id="row1">
+            <td id="nameRow1">Joaquim Oliveira</td>
+            <td id="phoneRow1">85 - 999999999</td>
+            <td>
+              <input type="button" id="editButton1" value="Editar" class="edit" onclick="editRow(1)">
+              <input type="button" id="saveButton1" value="Salvar" class="edit" onclick="saveRow(1)">
+              <input type="button" value="Deletar" class="delete" onclick="deleteRow('1')">
+            </td>
+          </tr>
+          <tr id="row2">
+            <td id="nameRow2">Joao Joao</td>
+            <td id="phoneRow2">85 - 98888888</td>
+            <td>
+              <input type="button" id="editButton2" value="Editar" class="edit" onclick="editRow(2)">
+              <input type="button" id="saveButton2" value="Salvar" class="edit" onclick="saveRow(2)">
+              <input type="button" value="Deletar" class="delete" onclick="deleteRow('2')">
+            </td>
+            <tr>
+              <td><input type="text" id="newName"></td>
+              <td><input type="tel" id="newPhone"</td>
+              <td><input type="button" class="add" onclick="addRow();" value="Inserir Novo"</td>
+            </tr>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+
+  </body>
+</html>
