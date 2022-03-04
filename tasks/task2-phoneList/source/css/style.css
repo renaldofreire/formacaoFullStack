@@ -1,17 +1,38 @@
-main {
-font-family: 'Roboto', sans-serif;
+body {
+ background-color: #d5def5;	
 }
 
-h1 {
+.content {
+	font-family: 'Roboto', sans-serif;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.contact-table {
+	width: 70%;
+	border-radius: 0.9em;
+	border-collapse: collapse;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.contact-table-menu {
 	font-weight: bold;
-	padding: 7px;
-	font-size: 16px;
-	position: center;
-
+	font-size: 18px;
+	background-color: #430f58;
+	color: #FFF;
 }
 
-table {
-	width: 50%;
+.contact-new {
+	background-color: #3e4a61;
+}
+
+.legend-add {
+	border-radius: 8px;
+}
+
+.button-add {
+	border-radius: 8px;
 }
 
 td, th {
@@ -22,5 +43,5 @@ td, th {
 }
 
 tr:nth-child(even) {
-	background-color: #DDDDDD;
+	background-color: #ffcdcd;
 }

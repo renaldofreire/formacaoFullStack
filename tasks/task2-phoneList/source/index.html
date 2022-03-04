@@ -12,42 +12,37 @@
   </head>
   <body>
 
-    <main>
-
-      <h1>Lista Telefônica</h1>
-
-      <div class="wrapper">
-        <table id="dataTable">
-          <tr id="row1">
-            <th>Nome</th>
-            <th>Número</th>
-            <th>#</th>
-          </tr>
-          <tr id="row1">
-            <td id="nameRow1">Joaquim Oliveira</td>
-            <td id="phoneRow1">85 - 999999999</td>
-            <td>
-              <input type="button" id="editButton1" value="Editar" class="edit" onclick="editRow(1)">
-              <input type="button" id="saveButton1" value="Salvar" class="edit" onclick="saveRow(1)">
-              <input type="button" value="Deletar" class="delete" onclick="deleteRow('1')">
-            </td>
-          </tr>
-          <tr id="row2">
-            <td id="nameRow2">Joao Joao</td>
-            <td id="phoneRow2">85 - 98888888</td>
-            <td>
-              <input type="button" id="editButton2" value="Editar" class="edit" onclick="editRow(2)">
-              <input type="button" id="saveButton2" value="Salvar" class="edit" onclick="saveRow(2)">
-              <input type="button" value="Deletar" class="delete" onclick="deleteRow('2')">
-            </td>
-            <tr>
-              <td><input type="text" id="newName"></td>
-              <td><input type="tel" id="newPhone"</td>
-              <td><input type="button" class="add" onclick="addRow();" value="Inserir Novo"</td>
-            </tr>
-          </tr>
-        </table>
-      </div>
+    <main class="content">
+      <table id="dataTable" class="contact-table">
+        <tr id="row1" class="contact-table-menu">
+          <th>Nome</th>
+          <th>Número</th>
+          <th>Editar</th>
+        </tr>
+        <tr class="contact-new">
+          <td class="contact-new"><input type="text" class="legend-add" id="newName" placeholder="Novo nome"></td>
+          <td class="contact-new"><input type="tel" class="legend-add" id="newPhone" placeholder="Novo Número"></td>
+          <td class="contact-new"><input type="button" class="add button-add" onclick="addRow();" value="Inserir"</td>
+        </tr>
+        <tr class="in-list" id="row1">
+          <td  id="nameRow1">Joaquim Oliveira</td>
+          <td id="phoneRow1">85 - 999999999</td>
+          <td>
+            <input type="button" id="editButton1" value="Editar" class="edit" onclick="editRow(1)">
+            <input type="button" id="saveButton1" value="Salvar" class="edit" onclick="saveRow(1)">
+            <input type="button" value="Deletar" class="delete" onclick="deleteRow('1')">
+          </td>
+        </tr>
+        <tr class="in-list" id="row2">
+          <td id="nameRow2">Joao Joao</td>
+          <td id="phoneRow2">85 - 98888888</td>
+          <td>
+            <input type="button" id="editButton2" value="Editar" class="edit" onclick="editRow(2)">
+            <input type="button" id="saveButton2" value="Salvar" class="edit" onclick="saveRow(2)">
+            <input type="button" value="Deletar" class="delete" onclick="deleteRow('2')">
+          </td>
+        </tr>
+      </table>
     </main>
 
     <script src="./js/main.js"></script>
