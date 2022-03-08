@@ -14,15 +14,25 @@
 
     <main class="content">
       <table id="dataTable" class="contact-table">
-        <tr id="row1" class="contact-table-menu">
+        <tr class="contact-table-menu">
           <th>Nome</th>
           <th>Número</th>
           <th>Editar</th>
         </tr>
         <tr class="contact-new">
-          <td class="contact-new"><input type="text" class="legend-add" id="newName" placeholder="Novo nome"></td>
-          <td class="contact-new"><input type="tel" class="legend-add" id="newPhone" placeholder="Novo Número"></td>
-          <td class="contact-new"><input type="button" class="add button-add" onclick="addRow();" value="Inserir"</td>
+          <td class="contact-new">
+            <label for="newName">
+              <input type="text" class="legend-add" id="newName" placeholder="Novo nome" required>
+            </label>
+          </td>
+          <td class="contact-new">
+            <label for="newPhone">
+              <input type="tel" class="legend-add" id="newPhone" placeholder="Novo número" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" required>
+            </label>
+          </td>
+          <td class="contact-new">
+            <input type="button" class="add button-add" onclick="addRow();" value="Inserir">
+          </td>
         </tr>
         <tr class="in-list" id="row1">
           <td  id="nameRow1">Joaquim Oliveira</td>
