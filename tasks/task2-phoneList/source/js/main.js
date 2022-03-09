@@ -28,6 +28,7 @@ function saveRow(no) {
 }
 
 function addRow() {
+
     let newName=document.getElementById("newName").value;
     let newPhone=document.getElementById("newPhone").value;
 
@@ -38,3 +39,4 @@ function addRow() {
     document.getElementById("newName").value="";
     document.getElementById("newPhone").value="";
 }
+
