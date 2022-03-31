@@ -1,3 +1,14 @@
+// Filtrar números
+const inputName = document.querySelector("#newName");
+
+inputName.addEventListener("keypress", function(e){
+    const keyCode = (e.keyCode ? e.keyCode : e.wich);
+
+    if(keyCode > 47 && keyCode < 58) {
+        e.preventDefault();
+    }
+});
+
 function deleteRow(no) {
     document.getElementById("row"+no+"").outerHTML="";
 }
