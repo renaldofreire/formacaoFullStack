@@ -1,3 +1,9 @@
 # Anotações
+- Continuar em: P3 / Média com forEach
 
-[Link](https://cursos.alura.com.br/course/fundamentos-javascript-arrays)
+
+
+## Revisar
+[] métodos: include and indexOf
+[] revisar: código 08-procurando-na-lista
+[] revisar: código 10-for-media
