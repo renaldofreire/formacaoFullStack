@@ -7,10 +7,31 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=7">
   <link rel="stylesheet" type="text/css" href="./style/style.css">
+  <link rel="stylesheet" type="text/css" href="./style/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400&family=Roboto&display=swap"
+    rel="stylesheet">
   <title>ChurrasCalc</title>
 </head>
 
 <body>
+
+  <div class="container">
+    <h1>ChurrasCalc</h1>
+
+    <input id="adult" name="adult" type="number" placeholder="Adultos"></input>
+    <input id="kids" name="kids" type="number" placeholder="Crianças"></input>
+    <input id="duration" name="durantion" type="number" placeholder="Duração (h)"></input>
+    <button>Calcular</button>
+
+  </div>
+
+  <div id="result">
+    <p>10kg de carne</p>
+    <p>5 latas de cerveja</p>
+
+  </div>
 
   <script src="./js/script.js">
 
