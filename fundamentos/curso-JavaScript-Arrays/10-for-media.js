@@ -13,3 +13,5 @@ let media = somaDeNotas / notas.length
 
 console.log(media)
 
+
+
