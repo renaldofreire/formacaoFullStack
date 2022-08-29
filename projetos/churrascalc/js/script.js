@@ -15,29 +15,27 @@ let inputDuration = document.getElementById("duration");
 
 let result = document.getElementById("result");
 
-
 //ao clicar no botão, executar função
 
 function calcChurras() {
-  console.log("calculando...")
+  console.log("calculando...");
 
   let adults = inputAdult.value;
   let kids = inputKids.value;
   let duration = inputDuration.value;
 
-  let totalMeat = meatPP(duration) * adults + (meatPP(duration) / 2 * kids);
+  let totalMeat = meatPP(duration) * adults + (meatPP(duration) / 2) * kids;
   let totalBeer = beerPP(duration) * adults;
-  let totalSoda = sodaPP(duration) * adults + (sodaPP(duration) / 2 * kids);
-
-
+  let totalSoda = sodaPP(duration) * adults + (sodaPP(duration) / 2) * kids;
 
   //Uso de atribuição += para inserir novo elemento
-  result.innerHTML = `<p>${totalMeat / 1000}kg de Carne.</p>`
+  result.innerHTML = `<p>${totalMeat / 1000}kg de Carne.</p>`;
   //Math.ceil - para arredondar valor para cima
-  result.innerHTML += `<p>${Math.ceil(totalBeer / 355)} latas de Cerveja.</p>`
-  result.innerHTML += `<p>${Math.ceil(totalSoda / 2000)} garrafas de Refrigerante 2L.</p>`
+  result.innerHTML += `<p>${Math.ceil(totalBeer / 355)} latas de Cerveja.</p>`;
+  result.innerHTML += `<p>${Math.ceil(
+    totalSoda / 2000
+  )} garrafas de Refrigerante 2L.</p>`;
 }
-
 
 function meatPP(duration) {
   if (duration >= 6) {

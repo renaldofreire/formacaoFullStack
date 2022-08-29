@@ -1,5 +1,5 @@
 .container {
-  font-family: 'Anek Latin', sans-serif;
+  font-family: "Anek Latin", sans-serif;
   max-width: 400px;
   margin: auto;
   background-color: darkgrey;
@@ -7,11 +7,11 @@
   border-radius: 10px;
 }
 
-input{
+input {
   width: 100%; /*ocupar todo elemento pai*/
   box-sizing: border-box;
   display: block;
   padding: 5px;
+
   margin-bottom: 10px;
 }
-

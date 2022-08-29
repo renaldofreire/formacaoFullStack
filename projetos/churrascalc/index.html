@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <link rel="stylesheet" type="text/css" href="./style/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>ChurrasCalc</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=7">
-  <link rel="stylesheet" type="text/css" href="./style/style.css">
-  <link rel="stylesheet" type="text/css" href="./style/reset.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400&family=Roboto&display=swap"
-    rel="stylesheet">
-  <title>ChurrasCalc</title>
-</head>
+  <body>
+    <div class="container">
+      <h1>ChurrasCalc</h1>
 
-<body>
+      <input id="adult" name="adult" type="number" placeholder="Adultos" />
+      <input id="kids" name="kids" type="number" placeholder="Crianças" />
+      <input
+        id="duration"
+        name="durantion"
+        type="number"
+        placeholder="Duração (h)"
+      />
+      <button onclick="calcChurras()">Calcular</button>
 
-  <div class="container">
-    <h1>ChurrasCalc</h1>
+      <div id="result"></div>
+    </div>
 
-    <input id="adult" name="adult" type="number" placeholder="Adultos"></input>
-    <input id="kids" name="kids" type="number" placeholder="Crianças"></input>
-    <input id="duration" name="durantion" type="number" placeholder="Duração (h)"></input>
-    <button onclick="calcChurras()">Calcular</button>
-
-    <div id="result"></div>
-  </div>
-
-
-  <script src="./js/script.js">
-
-  </script>
-
-</body>
-
+    <script src="./js/script.js"></script>
+  </body>
 </html>
